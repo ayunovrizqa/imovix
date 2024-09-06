@@ -3,7 +3,7 @@
 </p>
 This is the source code to iMovix, your ultimate video streaming experience.
 
-# 🎬 What is iMovix?
+# 🎬 What is NFLIX?
 iMovix is a video streaming platform that showcases video content from various third-party sources within a user-friendly and visually appealing interface.
 
 # 🌟Features
