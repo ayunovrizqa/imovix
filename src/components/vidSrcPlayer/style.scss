@@ -1,0 +1,114 @@
+.vidsrc-player {
+  width: 80%; /* Set player width to 80% of its container */
+  margin: auto; /* Center the player */
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff; 
+  }
+  .adblocker-notice {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ff0000;
+    text-align: center;
+  }
+  .server-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Allow wrapping of server buttons */
+
+    .server-button {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 5px; /* Adjust margins for better spacing */
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+      flex: 1 1 calc(50% - 10px); /* Make buttons take up half the width minus margin */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+      text-align: center;
+
+      &:hover {
+        background-color: #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      &.active {
+        background-color: #007bff;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for larger screens */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 100%; /* Add a gap from the bottom */
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Set iframe width to 100% of its container */
+      min-height: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  /* Media Query for Mobile Screens */
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on mobile screens */
+    padding-top: 0; /* Adjust padding to remove extra space */
+
+    .video-container {
+      padding-bottom: 56.25%; /* Maintain aspect ratio */
+      height: 0;
+
+      iframe {
+        min-height: 56.25%; /* Adjust iframe height to fit better on mobile */
+      }
+    }
+    p{
+      color:#007bff;
+    }
+    h3 {
+      font-size: 1rem; /* Adjust font size for mobile screens */
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .server-selector {
+      .server-button {
+        width: calc(50% - 10px); /* Two buttons per row */
+        max-width: none; /* Remove max-width */
+        margin: 5px; /* Consistent margin */
+        padding: 10px 15px; /* Adjust padding for better appearance */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+      }
+    }
+  }
+
+  /* Media Query for Larger Screens */
+  @media (min-width: 1024px) {
+    width: 70%; /* Slightly reduce width for larger screens */
+
+    .server-selector {
+      .server-button {
+        flex: 1 1 calc(25% - 10px); /* Four buttons per row on larger screens */
+        margin: 10px 5px; /* Adjust margins for better spacing */
+        padding: 15px 20px; /* Adjust padding for better appearance */
+        font-size: 1.1rem; /* Increase font size for larger screens */
+      }
+    }
+  }
+}
