@@ -39,4 +39,10 @@ npm run build
 ## 🙏 Acknowledgements
 Thank you for checking out nFlix. Your interest and feedback help us improve and grow this project. Cheers! 🍻
 
+![screenshot 1](https://github.com/user-attachments/assets/3d4e1f83-ad2f-4bcc-bd34-a361466b6ff0)
+![screenshot 2](https://github.com/user-attachments/assets/30e125cc-af30-4343-b61c-3bf8cad11f6b)
+![screenshot 3](https://github.com/user-attachments/assets/2a0aed85-01a1-419d-b966-c6214a28ee42)
+
+
+
 
